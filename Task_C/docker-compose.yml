@@ -1,0 +1,10 @@
+version: '3.9'
+services:
+  vue-app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8080:80"
+    container_name: vue-app
+    restart: unless-stopped
